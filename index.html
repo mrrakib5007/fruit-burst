@@ -28,6 +28,85 @@
 <body class="font-lato">
     <!-- Header Section  -->
     <header class="container mx-auto">
+        <nav class=" lg:bg-[#F85559] py-2 px-5 lg:px-10 mt-5 h-24 rounded-[100px] grid justify-between grid-cols-2 lg:grid-cols-3 items-center">
+            <div class="flex justify-end lg:justify-start items-center">
+                <ul class="hidden lg:flex list-none space-x-5 text-white font-normal"> 
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">All Fruits</a></li>
+                </ul>
+                <i class="fa-solid fa-bars text-black text-xl lg:text-3xl lg:hidden"></i>
+            </div>
+
+            <div class="flex order-first lg:order-none gap-3 justify-start lg:justify-center items-center font-bold">
+                <img src="./images/logo.png" alt="" class="w-10 ">
+                <h3 class="text-xl lg:text-4xl text-black lg:text-white font-black">Fruit Burst</h3>
+            </div>
+            <div class="hidden lg:flex justify-end">
+                <div class="bg-white w-[300px] p-1 px-4 flex gap-4 items-center justify-center rounded-[50px]">
+                    <input class="p-2 w-full outline-none" type="text" placeholder="Search here">
+                    <i class="fa-solid fa-magnifying-glass text-black text-lg cursor-pointer"></i>
+                </div>
+            </div>
+
+        </nav>
+
+        <!-- banner  -->
+        <div class="carousel w-full mt-5">
+            <div id="slide1" class="carousel-item relative w-full h-[300px] lg:h-auto bg-black">
+              <img src="/images/banner1.png" class="w-full opacity-50" />
+              <div class="absolute flex items-center justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide4" class="btn btn-circle bg-black text-white border-none">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </a> 
+                <div class="flex flex-col space-y-5 justify-center items-center bg-none">
+                    <h3 class="text-2xl lg:text-6xl font-bold text-white text-center">Exotic tastes at your <br> doorstep</h3>
+                    <p class="text-xl font-normal text-white text-center ">We supply highly quality organic products</p>
+                    <button class="btn bg-[#F85559] border-[#F85559] capitalize text-white hover:bg-transparent border-2 px-5">Shop Now</button>
+                </div>
+                <a href="#slide2" class="btn btn-circle bg-black text-white border-none">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </a> 
+                
+              </div>
+            </div> 
+            <div id="slide2" class="carousel-item relative w-full bg-black">
+              <img src="/images/banner2.png" class="w-full opacity-50" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide1" class="btn btn-circle bg-black text-white border-none">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </a> 
+                <a href="#slide3" class="btn btn-circle bg-black text-white border-none">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </a> 
+              </div>
+            </div> 
+            <div id="slide3" class="carousel-item relative w-full bg-black">
+              <img src="/images/banner3.png" class="w-full opacity-50" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide2" class="btn btn-circle bg-black text-white border-none">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </a> 
+                <a href="#slide4" class="btn btn-circle bg-black text-white border-none">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </a> 
+              </div>
+            </div> 
+            <div id="slide4" class="carousel-item relative w-full bg-black">
+              <img src="/images/banner4.png" class="w-full opacity-50" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide3" class="btn btn-circle bg-black text-white border-none">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </a> 
+                <a href="#slide1" class="btn btn-circle bg-black text-white border-none">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </a> 
+              </div>
+            </div>
+          </div>
+
+
 
     </header>
 
